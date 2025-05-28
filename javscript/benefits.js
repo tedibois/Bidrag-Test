@@ -1,14 +1,20 @@
 export const benefits = [
     {
-      name: "Aktivitetsersättning",
+      name: "Aktivitetsersättning vid förlängd skolgång",
       url: "https://www.forsakringskassan.se/aktivitetsersattning",
-      details: "För unga med funktionsnedsättning som inte kan jobba heltid.",
-      criteria: data => data.inSchool === "yes" && data.disabled === "yes" && parseInt(data.age) < 30
+      details: "Om du har en funktionsnedsättning som gör att du behöver längre tid för att bli klar med skolan, kan du få aktivitetsersättning vid förlängd skolgång.",
+      criteria: data => data.highSchool === "yes"  && data.disabled === "yes" && parseInt(data.age) >= 19 && parseInt(data.age) <= 29
     },
     {
-      name: "Studiemedel från CSN",
-      url: "https://www.csn.se/bidrag-och-lan/studiemedel.html",
-      details: "För dig som studerar efter gymnasiet.",
+        name: "Aktivitetsersättning vid nedsatt arbetsförmåga",
+        url: "https://www.forsakringskassan.se/privatperson/funktionsnedsattning/aktivitetsersattning/aktivitetsersattning-vid-nedsatt-arbetsformaga-for-dig-under-30-ar",
+        details: "För dem som varit sjuka i ett eller flera år.",
+        criteria: data => data.inSchool === "yes" &&data.sick1Year === "yes" && data.disabled === "yes" && parseInt(data.age) >= 19 && parseInt(data.age) <= 29
+      },
+    {
+      name: "Studiebidrag från CSN",
+      url: "https://www.csn.se/bidrag-och-lan.html",
+      details: "För dig som studerar.",
       criteria: data => data.inSchool === "yes"
     },
     {
