@@ -1,0 +1,85 @@
+body {
+    background-color: #fff;
+    background-image:
+      linear-gradient(to right, #00000020 1px, transparent 1px),
+      linear-gradient(to bottom, #00000020 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  h2{
+    text-align: center;
+    font-family: playful_6;
+}
+  .resultbox{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 400px;
+  }
+  button{
+    font-family: playful_6;
+    background-color: white;
+    border-radius: 4px;
+    border-width: 1px;
+  }
+
+  .submitButton{
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-family: playful_4;
+    color:rgb(79, 79, 79);
+}
+.QuizBox{
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quiz{
+    margin-top: 2rem;
+font-family: playful_6;
+
+}
+select{
+    font-family: playful_6;
+}
+label{
+    text-align: center;
+}
+@font-face {
+    font-family: playful_1;
+    src: url(/styles/fonts/Schoolbell-Regular.ttf);
+}
+@font-face {
+    font-family: playful_2;
+    src: url(/styles/fonts/NothingYouCouldDo-Regular.ttf);
+}
+@font-face {
+    font-family: playful_3;
+    src: url(/styles/fonts/ComicNeue-Light.ttf);
+}
+@font-face {
+    font-family: playful_4;
+    src: url(/styles/fonts/ComicNeue-LightItalic.ttf);
+}
+@font-face {
+    font-family: playful_5;
+    src: url(/styles/fonts/ComicNeue-Italic.ttf);
+}
+@font-face {
+    font-family: playful_6;
+    src: url(/styles/fonts/ComicNeue-Bold.ttf);
+}
+@font-face {
+    font-family: playful_7;
+    src: url(/styles/fonts/ComicNeue-BoldItalic.ttf);
+}
