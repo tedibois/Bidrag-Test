@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidrag</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Vilka bidrag har du behörighet för att ansöka?</h1>
+
+
+  <form id="quiz">
+
+
+    <div class="QuizBox">
+    <label>
+      <p>Går du i skolan?</p>
+      <select name="inSchool" required>
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+
+    <div class="QuizBox">
+    <label>
+      <p>Har du en funktionsnedsättning?</p>
+      <select name="disabled" required>
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+
+    <div class="QuizBox">
+    <label>
+       <p> Hur gammal är du?</p>
+        <select name="age" id="ageSelect" required>
+          <option value="">Välj…</option>
+        </select>
+    </label>
+</div>
+
+<div class="submitButton">
+    <button type="submit">Visa svar!</button>
+  </div>
+</form>
+
+<div class="resultbox">
+<h2>Resultat</h2>
+<ul id="result"></ul>
+</div>
+
+</body>
+<script type="module" src="javscript/javascript.js"></script>
+</html>
