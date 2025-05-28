@@ -57,29 +57,29 @@ label{
 }
 @font-face {
     font-family: playful_1;
-    src: url(/styles/fonts/Schoolbell-Regular.ttf);
+    src: url(../fonts/Schoolbell-Regular.ttf);
 }
 @font-face {
     font-family: playful_2;
-    src: url(/styles/fonts/NothingYouCouldDo-Regular.ttf);
+    src: url(../fonts/NothingYouCouldDo-Regular.ttf);
 }
 @font-face {
     font-family: playful_3;
-    src: url(/styles/fonts/ComicNeue-Light.ttf);
+    src: url(/../fonts/ComicNeue-Light.ttf);
 }
 @font-face {
     font-family: playful_4;
-    src: url(/styles/fonts/ComicNeue-LightItalic.ttf);
+    src: url(../fonts/ComicNeue-LightItalic.ttf);
 }
 @font-face {
     font-family: playful_5;
-    src: url(/styles/fonts/ComicNeue-Italic.ttf);
+    src: url(../fonts/ComicNeue-Italic.ttf);
 }
 @font-face {
     font-family: playful_6;
-    src: url(/styles/fonts/ComicNeue-Bold.ttf);
+    src: url(../fonts/ComicNeue-Bold.ttf);
 }
 @font-face {
     font-family: playful_7;
-    src: url(/styles/fonts/ComicNeue-BoldItalic.ttf);
+    src: url(../fonts/ComicNeue-BoldItalic.ttf);
 }
