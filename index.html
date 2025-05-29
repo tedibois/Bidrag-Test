@@ -9,7 +9,6 @@
 <body>
     <h1>Vilka bidrag har du behörighet för att ansöka?</h1>
 
-
   <form id="quiz">
 
     <div class="QuizBox">
@@ -37,7 +36,18 @@
 <div class="QuizBox">
     <label>
       <p>Har du varit sjuk i minst ett år?</p>
-      <select name="sick1Year" required>
+      <select name="sick1Year">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+<div class="QuizBox">
+    <label>
+      <p>Kommer du aldrig kunna jobba heltid pga funktionsnedsättning eller sjukdom?</p>
+      <select name="sick">
         <option value="">Välj…</option>
         <option value="yes">Ja</option>
         <option value="no">Nej</option>
