@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
+
     <h1>Vilka bidrag har du behörighet för att ansöka?</h1>
 
   <form id="quiz">
@@ -14,7 +16,7 @@
     <div class="QuizBox">
     <label>
       <p>Har du en funktionsnedsättning?</p>
-      <select name="disabled" required>
+      <select name="disabled">
         <option value="">Välj…</option>
         <option value="yes">Ja</option>
         <option value="no">Nej</option>
@@ -66,7 +68,7 @@
     </label>
 </div>
 
-<div class="QuizBox">
+<div class="QuizBox">,
     <label>
       <p>Går du för nuvarande Grundskolan?</p>
       <select name="primarySchool">
@@ -99,6 +101,71 @@
       </select>
     </label>
 </div>
+<div class="QuizBox">
+  <label>
+    <p>Har du barn?</p>
+    <select name="hasChild">
+      <option value="">Välj…</option>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+  </label>
+</div>
+<div class="QuizBox">
+  <label>
+    <p>Har du ett eller flera barn under 12 år gammal?</p>
+    <select name="childUnder12">
+      <option value="">Välj…</option>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+  </label>
+</div>
+<div class="QuizBox">
+  <label>
+    <p>Har du ett barn som bor hemmos dig?</p>
+    <select name="childHome">
+      <option value="">Välj…</option>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+  </label>
+</div>
+
+
+<div class="QuizBox">
+  <label>
+    <p>Jobbar du?</p>
+    <select name="Work">
+      <option value="">Välj…</option>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+  </label>
+</div>
+
+<div class="QuizBox">
+  <label>
+    <p>Betalar du mer än 1800kr i månaden för din bostad?</p>
+    <select name="rent1800">
+      <option value="">Välj…</option>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+  </label>
+</div>
+
+
+<div class="QuizBox">
+  <label>
+    <p>Är din årsinkomst mindre än 86720kr?</p>
+    <select name="year86000">
+      <option value="">Välj…</option>
+      <option value="yes">Ja</option>
+      <option value="no">Nej</option>
+    </select>
+  </label>
+</div>
 
 <div class="submitButton">
     <button type="submit">Visa svar!</button>
@@ -109,6 +176,7 @@
 <h2>Resultat</h2>
 <ul id="result"></ul>
 </div>
+
 
 </body>
 <script type="module" src="javscript/javascript.js"></script>
