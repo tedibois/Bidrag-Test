@@ -32,3 +32,5 @@ for (let i = 1; i <= 110; i++) {
   ageSelect.insertAdjacentHTML('beforeend',
     `<option value="${i}">${i}</option>`);
 }
+
+

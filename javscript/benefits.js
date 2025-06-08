@@ -1,23 +1,5 @@
 export const benefits = [
   {
-    name: "10-dagar (i samband med barns födelse)",
-    url: "https://www.forsakringskassan.se/privatperson/foralder/10-dagar-vid-barns-fodelse",
-    details: "",
-    criteria: data => false
-  },
-  {
-    name: "10-dagar (i samband med barns adoption)",
-    url: "https://www.forsakringskassan.se/privatperson/foralder/adoption/10-dagar-vid-barns-adoption",
-    details: "",
-    criteria: data => false
-  },
-  {
-    name: "Adoptionsbidrag",
-    url: "https://www.forsakringskassan.se/privatperson/foralder/adoption/adoptionsbidrag",
-    details: "",
-    criteria: data => false
-  },
-  {
     name: "Aktivitetsersättning vid nedsatt arbetsförmåga",
     url: "https://www.forsakringskassan.se/privatperson/funktionsnedsattning/aktivitetsersattning/aktivitetsersattning-vid-nedsatt-arbetsformaga-for-dig-under-30-ar",
     details: "För dem som varit sjuka i ett eller flera år.",
@@ -26,6 +8,7 @@ export const benefits = [
      data.disabled === "yes" && 
      parseInt(data.age) >= 19 &&
       parseInt(data.age) <= 29
+      
   },
   {
     name: "Aktivitetsersättning vid förlängd skolgång",
@@ -40,8 +23,9 @@ export const benefits = [
   {
     name: "Aktivitetsstöd – när du deltar i ett program hos Arbetsförmedlingen",
     url: "https://www.forsakringskassan.se/privatperson/arbetssokande/aktivitetsstod",
-    details: "",
-    criteria: data => false
+    details: "Du som deltar i Arbetsförmedlingens program kan få aktivitetsstöd eller utvecklingsersättning",
+    criteria: data => 
+      data.arbetsFörmedlingen === "yes"
   },
   {
     name: "Allmänt tandvårdsbidrag",
@@ -516,3 +500,4 @@ export const benefits = [
     parseInt(data.age) >= 16
   }
 ];
+/*https://www.forsakringskassan.se/privatperson/ersattningar-a-o*/

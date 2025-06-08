@@ -8,11 +8,23 @@
 </head>
 <body>
 
+<strong>Eventuellt behöriga bidrag:</strong> <span id="eligible-count">0</span>
+
 
     <h1>Vilka bidrag har du behörighet för att ansöka?</h1>
 
 
   <form id="quiz">
+
+
+    <div class="QuizBox">
+    <label>
+       <p> Hur gammal är du?</p>
+        <select name="age" id="ageSelect">
+          <option value="">Välj…</option>
+        </select>
+    </label>
+</div>
 
     <div class="QuizBox">
     <label>
@@ -22,16 +34,6 @@
         <option value="yes">Ja</option>
         <option value="no">Nej</option>
       </select>
-    </label>
-</div>
-
-
-    <div class="QuizBox">
-    <label>
-       <p> Hur gammal är du?</p>
-        <select name="age" id="ageSelect">
-          <option value="">Välj…</option>
-        </select>
     </label>
 </div>
 
@@ -157,6 +159,83 @@
   </label>
 </div>
 
+  <div class="QuizBox">
+    <label>
+      <p>Deltar du i Arbetsförmedlingens Program?</p>
+      <select name="arbetsFörmedlingen">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+  <div class="QuizBox">
+    <label>
+      <p>Example</p>
+      <select name="Example">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+  <div class="QuizBox">
+    <label>
+      <p>Example</p>
+      <select name="Example">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+  <div class="QuizBox">
+    <label>
+      <p>Example</p>
+      <select name="Example">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+  <div class="QuizBox">
+    <label>
+      <p>Example</p>
+      <select name="Example">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+  <div class="QuizBox">
+    <label>
+      <p>Example</p>
+      <select name="Example">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
+  <div class="QuizBox">
+    <label>
+      <p>Example</p>
+      <select name="Example">
+        <option value="">Välj…</option>
+        <option value="yes">Ja</option>
+        <option value="no">Nej</option>
+      </select>
+    </label>
+</div>
+
 <div class="submitButton">
     <button type="submit">Visa svar!</button>
   </div>
@@ -168,7 +247,8 @@
 <div id="result" class="result-container"></div>
 </div>
 </div>
-
+<p>bidrag som inte är med: adoptionsbidrag, 10-dagar
+</p>
 </body>
 <script type="module" src="javscript/javascript.js"></script>
 </html>
