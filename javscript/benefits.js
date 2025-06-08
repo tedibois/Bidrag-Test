@@ -31,27 +31,12 @@ export const benefits = [
       name: "Aktivitetsersättning vid förlängd skolgång",
       url: "https://www.forsakringskassan.se/aktivitetsersattning",
       details: "Om du har en funktionsnedsättning som gör att du behöver längre tid för att bli klar med skolan, kan du få aktivitetsersättning vid förlängd skolgång.",
-<<<<<<< HEAD
       criteria: data => 
         data.highSchool === "yes"  &&
-=======
-      criteria: data => data.highSchool === "yes"  &&
->>>>>>> 8e1621afa75dec0727ccd145068a8c3bbc60512f
        data.disabled === "yes" &&
         parseInt(data.age) >= 19 &&
          parseInt(data.age) <= 29
     },
-    {
-<<<<<<< HEAD
-        name: "Aktivitetsersättning vid nedsatt arbetsförmåga",
-        url: "https://www.forsakringskassan.se/privatperson/funktionsnedsattning/aktivitetsersattning/aktivitetsersattning-vid-nedsatt-arbetsformaga-for-dig-under-30-ar",
-        details: "För dem som varit sjuka i ett eller flera år.",
-        criteria: data => data.inSchool === "yes" && 
-        data.sick1Year === "yes" && 
-        data.disabled === "yes" && 
-        parseInt(data.age) >= 19 &&
-        parseInt(data.age) <= 29
-      },
       {
     name: "Sjukersättning (varaktig nedsättning)",
     url: "https://www.forsakringskassan.se/privatperson/funktionsnedsattning/sjukersattning",
@@ -68,12 +53,6 @@ export const benefits = [
       details: "För dig som studerar.",
       criteria: data => 
       data.inSchool === "yes"
-=======
-      name: "Aktivitetsstöd – när du deltar i ett program hos Arbetsförmedlingen",
-      url: "https://www.forsakringskassan.se/privatperson/arbetssokande/aktivitetsstod-eller-utvecklingsersattning-nar-du-deltar-i-arbetsformedlingens-program",
-      details: "",
-      criteria: data => false
->>>>>>> 8e1621afa75dec0727ccd145068a8c3bbc60512f
     },
     {
       name: "Allmänt tandvårdsbidrag",
@@ -132,7 +111,7 @@ export const benefits = [
     {
       name: "Bostadsbidrag till barnfamiljer",
       url: "https://www.forsakringskassan.se/privatperson/foralder/bostadsbidrag-till-barnfamiljer",
-      details: "För dig som har barn som bor hemmos dig",
+      details: "För dig som har barn som bor hemma hos dig",
       criteria: data => data.childHome === "yes"
     },
     {
