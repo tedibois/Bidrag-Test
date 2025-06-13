@@ -3,12 +3,10 @@ export const benefits = [
     name: "Aktivitetsersättning vid nedsatt arbetsförmåga",
     url: "https://www.forsakringskassan.se/privatperson/funktionsnedsattning/aktivitetsersattning/aktivitetsersattning-vid-nedsatt-arbetsformaga-for-dig-under-30-ar",
     details: "För dem som varit sjuka i ett eller flera år.",
-    criteria: data => data.inSchool === "yes" &&
-    data.sick1Year === "yes" &&
-     data.disabled === "yes" && 
-     parseInt(data.age) >= 19 &&
-      parseInt(data.age) <= 29
-      
+    criteria: data =>
+    (data.disabled === "yes" || data.sick1Year === "yes") && 
+    parseInt(data.age) >= 19 &&
+    parseInt(data.age) <= 29
   },
   {
     name: "Aktivitetsersättning vid förlängd skolgång",
@@ -28,22 +26,20 @@ export const benefits = [
       data.arbetsFörmedlingen === "yes"
   },
   {
-    name: "Allmänt tandvårdsbidrag",
-    url: "https://www.forsakringskassan.se/privatperson/tandvard/tandvardsstod",
-    details: "",
-    criteria: data => false
-  },
-  {
     name: "Arbetshjälpmedel",
     url: "https://www.forsakringskassan.se/privatperson/funktionsnedsattning/arbetshjalpmedel",
-    details: "",
-    criteria: data => false
+    details: "Om du behöver speciella arbetshjälpmedel pga funktionsnedsättning eller sjukdom",
+    criteria: data => 
+      data.work12m === "yes" &&
+    (data.disabled === "yes" || data.sick1Year === "yes") && 
+      parseInt(data.age) < 69
   },
   {
     name: "Arbetsskadeersättning",
     url: "https://www.forsakringskassan.se/privatperson/sjuk/om-du-har-skadat-dig-i-arbetet-eller-under-utbildning",
-    details: "",
-    criteria: data => false
+    details: "Om du har skadat dig i arbetet eller under utbildning.",
+    criteria: data => 
+      data.workAccident === "yes"
   },
   {
     name: "Assistansersättning för vuxna",
@@ -203,7 +199,7 @@ export const benefits = [
     url: "https://www.forsakringskassan.se/privatperson/foralder/foraldrapenning",
     details: "För dig under 29 år med låg inkomst.",
     criteria: data => data.inSchool === "no" &&
-     data.Work === "no" &&
+     data.work === "no" &&
       data.childUnder12 === "yes"
   },
   {
