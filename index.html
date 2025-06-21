@@ -1,277 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bidrag</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bidrag</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
 
-<strong>Eventuellt behöriga bidrag:</strong> <span id="eligible-count">0</span>
 
 
-    <h1>Vilka bidrag har du behörighet för att ansöka?</h1>
+<h1>Vilka bidrag har du behörighet för att ansöka?</h1>
 
+<form id="quiz">
 
-  <form id="quiz">
-
-
-    <div class="QuizBox">
-    <label>
-       <p> Hur gammal är du?</p>
-        <select name="age" id="ageSelect">
-          <option value="">Välj…</option>
-        </select>
-    </label>
-</div>
-
-    <div class="QuizBox">
-    <label>
-      <p>Har du en funktionsnedsättning?</p>
-      <select name="disabled">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-
-
-<div class="QuizBox">
-    <label>
-      <p>Har du varit sjuk i minst ett år?</p>
-      <select name="sick1Year">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-
-<div class="QuizBox">
-    <label>
-      <p>Går du för nuvarande i någon slags skola?</p>
-      <select name="inSchool">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-
-<div class="QuizBox">,
-    <label>
-      <p>Går du för nuvarande Grundskolan?</p>
-      <select name="primarySchool">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-
-
-<div class="QuizBox">
-    <label>
-      <p>Går du för nuvarande Gymnasiet?</p>
-      <select name="highSchool">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-
-<div class="QuizBox">
-    <label>
-      <p>Går du för nuvarande Universitet eller Högskola?</p>
-      <select name="collegeSchool">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-<div class="QuizBox">
-  <label>
-    <p>Har du barn?</p>
-    <select name="hasChild">
-      <option value="">Välj…</option>
-      <option value="yes">Ja</option>
-      <option value="no">Nej</option>
-    </select>
-  </label>
-</div>
-<div class="QuizBox">
-  <label>
-    <p>Har du ett eller flera barn under 12 år gammal?</p>
-    <select name="childUnder12">
-      <option value="">Välj…</option>
-      <option value="yes">Ja</option>
-      <option value="no">Nej</option>
-    </select>
-  </label>
-</div>
-<div class="QuizBox">
-  <label>
-    <p>Har du ett barn som bor hemma hos dig?</p>
-    <select name="childHome">
-      <option value="">Välj…</option>
-      <option value="yes">Ja</option>
-      <option value="no">Nej</option>
-    </select>
-  </label>
-</div>
-
-
-<div class="QuizBox">
-  <label>
-    <p>Jobbar du?</p>
-    <select name="work">
-      <option value="">Välj…</option>
-      <option value="yes">Ja</option>
-      <option value="no">Nej</option>
-    </select>
-  </label>
-</div>
-
-<div class="QuizBox">
-    <label>
-      <p>Har du varit anställd hos din arbetsgivare i mer än 12 månader, eller drivit ett eget företag i 12 månader?</p>
-      <select name="work12m">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
-
-<div class="QuizBox">
-  <label>
-    <p>Betalar du mer än 1800kr i månaden för din bostad?</p>
-    <select name="rent1800">
-      <option value="">Välj…</option>
-      <option value="yes">Ja</option>
-      <option value="no">Nej</option>
-    </select>
-  </label>
-</div>
-
-
-<div class="QuizBox">
-  <label>
-    <p>Är din årsinkomst mindre än 86720kr?</p>
-    <select name="year86000">
-      <option value="">Välj…</option>
-      <option value="yes">Ja</option>
-      <option value="no">Nej</option>
-    </select>
-  </label>
-</div>
-
+  <div class="ageBox">
   <div class="QuizBox">
     <label>
-      <p>Deltar du i Arbetsförmedlingens Program?</p>
-      <select name="arbetsFörmedlingen">
+      <p>Hur gammal är du?</p>
+      <select name="age" id="ageSelect">
         <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
       </select>
     </label>
+  </div>
 </div>
 
-<div class="QuizBox">
-    <label>
-      <p>Har du skadat dig på jobbet eller under utbildning?</p>
-      <select name="workAccident">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
+      <legend>Har du en funktionsnedsättning?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="disabled" value="yes" /> Ja</label>
+    <label><input type="radio" name="disabled" value="no" /> Nej</label>
+  </fieldset>
 
-  <div class="QuizBox">
-    <label>
-      <p>Example</p>
-      <select name="Example">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
 
-  <div class="QuizBox">
-    <label>
-      <p>Example</p>
-      <select name="Example">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
+    <legend>Har du varit sjuk i minst ett år?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="sick1Year" value="yes" /> Ja</label>
+    <label><input type="radio" name="sick1Year" value="no" /> Nej</label>
+  </fieldset>
 
-  <div class="QuizBox">
-    <label>
-      <p>Example</p>
-      <select name="Example">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
 
-  <div class="QuizBox">
-    <label>
-      <p>Example</p>
-      <select name="Example">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
+      <legend>Går du för nuvarande i någon slags skola?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="inSchool" value="yes" /> Ja</label>
+    <label><input type="radio" name="inSchool" value="no" /> Nej</label>
+  </fieldset>
 
-  <div class="QuizBox">
-    <label>
-      <p>Example</p>
-      <select name="Example">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
 
-  <div class="QuizBox">
-    <label>
-      <p>Example</p>
-      <select name="Example">
-        <option value="">Välj…</option>
-        <option value="yes">Ja</option>
-        <option value="no">Nej</option>
-      </select>
-    </label>
-</div>
+      <legend>Går du för nuvarande Grundskolan?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="primarySchool" value="yes" /> Ja</label>
+    <label><input type="radio" name="primarySchool" value="no" /> Nej</label>
+  </fieldset>
 
-<div class="submitButton">
+
+      <legend>Går du för nuvarande Gymnasiet?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="highSchool" value="yes" /> Ja</label>
+    <label><input type="radio" name="highSchool" value="no" /> Nej</label>
+  </fieldset>
+
+
+      <legend>Går du för nuvarande Universitet eller Högskola?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="collegeSchool" value="yes" /> Ja</label>
+    <label><input type="radio" name="collegeSchool" value="no" /> Nej</label>
+  </fieldset>
+
+
+    <legend>Har du barn?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="hasChild" value="yes" /> Ja</label>
+    <label><input type="radio" name="hasChild" value="no" /> Nej</label>
+  </fieldset>
+
+     <legend>Har du ett eller flera barn under 12 år gammal?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="childUnder12" value="yes" /> Ja</label>
+    <label><input type="radio" name="childUnder12" value="no" /> Nej</label>
+  </fieldset>
+
+
+      <legend>Har du ett barn som bor hemma hos dig?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="childHome" value="yes" /> Ja</label>
+    <label><input type="radio" name="childHome" value="no" /> Nej</label>
+  </fieldset>
+
+
+      <legend>Jobbar du?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="work" value="yes" /> Ja</label>
+    <label><input type="radio" name="work" value="no" /> Nej</label>
+  </fieldset>
+
+
+   <legend>Har du varit anställd hos din arbetsgivare i mer än 12 månader, eller drivit ett eget företag i 12 månader?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="work12m" value="yes" /> Ja</label>
+    <label><input type="radio" name="work12m" value="no" /> Nej</label>
+  </fieldset>
+
+
+   <legend>Betalar du mer än 1800kr i månaden för din bostad?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="rent1800" value="yes" /> Ja</label>
+    <label><input type="radio" name="rent1800" value="no" /> Nej</label>
+  </fieldset>
+
+
+      <legend>Är din årsinkomst mindre än 86720kr?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="year86000" value="yes" /> Ja</label>
+    <label><input type="radio" name="year86000" value="no" /> Nej</label>
+  </fieldset>
+
+
+      <legend>Deltar du i Arbetsförmedlingens Program?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="arbetsFörmedlingen" value="yes" /> Ja</label>
+    <label><input type="radio" name="arbetsFörmedlingen" value="no" /> Nej</label>
+  </fieldset>
+
+
+      <legend>Har du skadat dig på jobbet eller under utbildning?</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="workAccident" value="yes" /> Ja</label>
+    <label><input type="radio" name="workAccident" value="no" /> Nej</label>
+  </fieldset>
+
+
+
+    <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+
+
+   <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+
+
+   <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+  
+
+   <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+  
+
+   <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+  
+
+   <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+  
+
+   <legend>Example</legend>
+  <fieldset class="QuizBox">
+    <label><input type="radio" name="Example1" value="yes" /> Ja</label>
+    <label><input type="radio" name="Example1" value="no" /> Nej</label>
+  </fieldset>
+  <div class="submitButton">
     <button type="submit">Visa svar!</button>
   </div>
 </form>
 
 <div class="resultbox">
-<h2>Resultat</h2>
-<div class="resultboxParent">
-<div id="result" class="result-container"></div>
+  <h2>Resultat</h2>
+  <div class="resultboxParent">
+    <div id="result" class="result-container"></div>
+  </div>
 </div>
-</div>
-<p>bidrag som inte är med: adoptionsbidrag, 10-dagar
-</p>
-</body>
-<script type="module" src="javscript/javascript.js"></script>
-</html>
 
+
+<script type="module" src="javscript/javascript.js"></script>
+</body>
+</html>

@@ -26,7 +26,7 @@ document.querySelector('#quiz').addEventListener('submit', e => {
     : `<p class="no-result">❌ Inga bidrag hittades – prova att ändra svaren.</p>`;
 });
 
-// age-select filler (unchanged)
+// age select 😛
 const ageSelect = document.getElementById('ageSelect');
 for (let i = 1; i <= 110; i++) {
   ageSelect.insertAdjacentHTML('beforeend',

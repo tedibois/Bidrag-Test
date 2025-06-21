@@ -1,63 +1,52 @@
+  h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-family: playful_3;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
-.shadow1{
-position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0%;
-    top:100%;
-    bottom:0%;
-    border: 2px solid transparent;
-    border-radius: 2px;
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
-.shadow1::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right:-15px;
-    bottom:-15px;
-    border: 30px solid rgba(0,0,0,.07);
-    border-radius: 2px;
-    height: 100%;
-    filter: blur(3px);
+
+legend{
+  color: #fff;
+  text-align: center;
 }
-.shadow2{
-position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0%;
-    top:100%;
-    bottom:0%;
-    border: 2px solid transparent;
-    border-radius: 2px;
+
+p{
+color: #fff;
 }
-.shadow2::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -11px;
-    left: -11px;
-    right:-11px;
-    bottom:-11px;
-    border: 8px solid rgba(0,0,0,.07);
-    border-radius: 2px;
-    height: 100%;
-    filter: blur(2px);
+label{
+  color:#fff;
+}
+
+.ageBox{
+margin-bottom: 1rem;
 }
 
 
 body {
-    background-color: #fff;
+    background-color: #1b1b1b;
     background-image:
-      linear-gradient(to right, #00000020 1px, transparent 1px),
-      linear-gradient(to bottom, #00000020 1px, transparent 1px);
+      linear-gradient(to right, #b1b1b120 1px, transparent 1px),
+      linear-gradient(to bottom, #b1b1b120 1px, transparent 1px);
     background-size: 20px 20px;
   }
 
   h2{
     text-align: center;
     font-family: playful_6;
+    color:#fff;
 }
   .resultbox{
     overflow: hidden;
@@ -88,17 +77,12 @@ body {
     margin-right: auto;
     
   }
-  h1{
-    margin-top: 3rem;
-    text-align: center;
-    font-family: playful_4;
-    color:rgb(79, 79, 79);
-}
 .QuizBox{
     display: flex;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+margin-bottom:1rem;
 }
 #quiz{
     margin-top: 2rem;
@@ -171,7 +155,6 @@ label{
     color: inherit;           /* keep links white */
     text-decoration: underline;
   }
-
 
 
   
