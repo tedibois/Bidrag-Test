@@ -1,13 +1,30 @@
+  @font-face {
+    font-family: emoji;
+    src: url(../fonts/EmojiFont.ttf);
+  }
+  @font-face {
+    font-family: pixel;
+    src: url(../fonts/Pixelout\ Personal\ Use\ Only.ttf);
+  }
+  @font-face {
+    font-family: main ;
+    src: url(../fonts/Lexend-VariableFont_wght.ttf);
+  }
+  
   h1{
-    margin-top: 3rem;
-    text-align: center;
-    font-family: playful_3;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+font-family: main;
+    color:#afafaf;
+        text-align: center;
 }
+
+legend,p,h2,label,button{
+  font-family: main;
+  filter:blur(0.2px);
+ }
+
+ fieldset{
+  margin-top: 0.8rem;
+ }
 
 @-webkit-keyframes glow {
   from {
@@ -17,10 +34,15 @@
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
-
+form{
+  width: 60%;
+    margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
 legend{
   color: #fff;
-  text-align: center;
+
 }
 
 p{
@@ -34,13 +56,25 @@ label{
 margin-bottom: 1rem;
 }
 
-
+ .headerBox{
+  margin-left: auto;
+  margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+position: sticky;
+text-align: center;
+margin-bottom: -3rem;
+color:#ffffff
+ }
 body {
     background-color: #1b1b1b;
     background-image:
-      linear-gradient(to right, #b1b1b120 1px, transparent 1px),
       linear-gradient(to bottom, #b1b1b120 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-size: 2px 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   h2{
@@ -90,38 +124,10 @@ font-family: playful_6;
 
 }
 select{
-    font-family: playful_6;
+    font-family: pixel_2;
 }
 label{
     text-align: center;
-}
-@font-face {
-    font-family: playful_1;
-    src: url(../fonts/Schoolbell-Regular.ttf);
-}
-@font-face {
-    font-family: playful_2;
-    src: url(../fonts/NothingYouCouldDo-Regular.ttf);
-}
-@font-face {
-    font-family: playful_3;
-    src: url(/../fonts/ComicNeue-Light.ttf);
-}
-@font-face {
-    font-family: playful_4;
-    src: url(../fonts/ComicNeue-LightItalic.ttf);
-}
-@font-face {
-    font-family: playful_5;
-    src: url(../fonts/ComicNeue-Italic.ttf);
-}
-@font-face {
-    font-family: playful_6;
-    src: url(../fonts/ComicNeue-Bold.ttf);
-}
-@font-face {
-    font-family: playful_7;
-    src: url(../fonts/ComicNeue-BoldItalic.ttf);
 }
 .result-container{
     align-content: center;
@@ -156,5 +162,3 @@ label{
     text-decoration: underline;
   }
 
-
-  

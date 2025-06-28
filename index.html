@@ -8,16 +8,26 @@
 </head>
 <body>
 
-
-
+  <div class="headerBox">
+  <pre>
+<h3>  ____    _       _                        
+ |  _ \  (_)     | |                       
+ | |_) |  _    __| |  _ __    __ _    __ _ 
+ |  _ <  | |  / _` | | '__|  / _` |  / _` |
+ | |_) | | | | (_| | | |    | (_| | | (_| |
+ |____/  |_|  \__,_| |_|     \__,_|  \__, |
+                                      __/ |
+                                     |___/ </h3>
+                                     </pre>
+</div>
 <h1>Vilka bidrag har du behörighet för att ansöka?</h1>
 
 <form id="quiz">
 
+        <legend>Hur gammal är du?</legend>
   <div class="ageBox">
   <div class="QuizBox">
     <label>
-      <p>Hur gammal är du?</p>
       <select name="age" id="ageSelect">
         <option value="">Välj…</option>
       </select>
@@ -25,14 +35,15 @@
   </div>
 </div>
 
-      <legend>Har du en funktionsnedsättning?</legend>
+      
+     <legend>Har du en funktionsnedsättning?</legend>
   <fieldset class="QuizBox">
     <label><input type="radio" name="disabled" value="yes" /> Ja</label>
     <label><input type="radio" name="disabled" value="no" /> Nej</label>
   </fieldset>
 
 
-    <legend>Har du varit sjuk i minst ett år?</legend>
+        <legend>Har du varit sjuk i minst ett år?</legend>
   <fieldset class="QuizBox">
     <label><input type="radio" name="sick1Year" value="yes" /> Ja</label>
     <label><input type="radio" name="sick1Year" value="no" /> Nej</label>
