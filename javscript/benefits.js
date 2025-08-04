@@ -60,7 +60,19 @@ export const benefits = [
     criteria: data => parseInt(data.age) < 16
   },
   {
-    name: "Begravningsbidrag",
+    name: "Bostadsbidrag för tjänstgöring i totalförsvaret",
+    url: "https://www.forsakringskassan.se/privatperson/ersattningar-a-o/familjebidrag-for-tjanstgoring-i-totalforsvaret",
+    details: "",
+    criteria: data => false
+  },
+  {
+    name: "Familjepennning för tjänstgöring i totalförsvaret",
+    url: "https://www.forsakringskassan.se/privatperson/ersattningar-a-o/familjebidrag-for-tjanstgoring-i-totalforsvaret",
+    details: "",
+    criteria: data => false
+  },
+  {
+    name: "Näringsbidrag för tjänstgöring i totalförsvaret",
     url: "https://www.forsakringskassan.se/privatperson/ersattningar-a-o/familjebidrag-for-tjanstgoring-i-totalforsvaret",
     details: "",
     criteria: data => false
