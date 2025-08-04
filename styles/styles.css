@@ -11,10 +11,18 @@
     src: url(../fonts/Lexend-VariableFont_wght.ttf);
   }
   
-  h1{
+  h1 {
 font-family: main;
     color:#afafaf;
         text-align: center;
+}
+
+.parentBox {
+border-style: double;
+border-color: grey;
+border-top: 0px;
+border-right:0px;
+margin-top:1rem;
 }
 
 legend,p,h2,label,button{
@@ -23,8 +31,16 @@ legend,p,h2,label,button{
  }
 
  fieldset{
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
  }
+
+ legend{
+  margin-left:0.4rem;
+  margin-top:0.2rem;
+  color: #fff;
+
+}
 
 @-webkit-keyframes glow {
   from {
@@ -39,10 +55,6 @@ form{
     margin-left: auto;
   margin-right: auto;
   max-width: 500px;
-}
-legend{
-  color: #fff;
-
 }
 
 p{
