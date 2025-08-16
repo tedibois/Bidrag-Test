@@ -100,7 +100,7 @@ export const benefits = [
     url: "https://www.forsakringskassan.se/privatperson/ersattningar-a-o/familjebidrag-for-tjanstgoring-i-totalforsvaret",
     details: "",
     criteria: data => false
-  },
+ },
   {
     name: "Bostadsbidrag för unga utan barn",
     url: "https://www.forsakringskassan.se/privatperson/arbetssokande/bostadsbidrag/bostadsbidrag-till-unga-under-29-ar",
@@ -108,7 +108,7 @@ export const benefits = [
     criteria: data => parseInt(data.age) < 29 &&
     data.rent1800 === "yes" &&
     data.year86000 === "yes" &&
-    data.hasChild === "no"
+    data.hasChild === "no" 
   },
   {
     name: "Bostadsersättning till dig med etableringsersättning",
